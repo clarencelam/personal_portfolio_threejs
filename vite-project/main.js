@@ -37,8 +37,8 @@ scene.add(pointLight, ambientLight);
 
 // Helpers
 //const lightHelper = new THREE.PointLightHelper(pointLight);
-//const gridHelper = new THREE.GridHelper(200,50);
-//scene.add(lightHelper, gridHelper);
+// const gridHelper = new THREE.GridHelper(200,50);
+// scene.add(gridHelper);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
@@ -59,8 +59,8 @@ let numstars = 200;
 Array(numstars).fill().forEach(addStar);
 
 // Background
-//const spaceTexture = new THREE.TextureLoader().load('astronomy.jpg');
-//scene.background = spaceTexture;
+const spaceTexture = new THREE.TextureLoader().load('astronomy.jpg');
+scene.background = spaceTexture;
 
 function moveCamera(){
   const t = document.body.getBoundingClientRect().top;
