@@ -55,12 +55,18 @@ a{
   color:#17a2b8
 }
 
+h1 { font-size: 56px;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
 
 .s1 {
-  grid-column: 2 / span 5;
+  grid-column: 2 / span 6;
   background: var(--mainColor);
 
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   padding: 2rem;
   margin-bottom: var(--bottomSpacing);
   border: 3px solid var(--borderColor);
@@ -71,13 +77,12 @@ a{
 }
 
 .subheader {
-text-align:center;
-grid-column: 2 / span 5;
+grid-column: 2 / span 6;
 background: var(--mainColor);
+margin-bottom: 10px;
 
-  font-size: 2.5rem;
+  font-size: 1rem;
   padding: 1rem;
-  margin-bottom: var(--bottomSpacing);
   border: 2px solid var(--borderColor);
   
   box-shadow: 11px 11px 0px 3px rgba(6,54,6,1);
@@ -119,6 +124,31 @@ background: var(--mainColor);
   -moz-box-shadow: 11px 11px 0px 3px rgba(6,54,6,1);
 }
 
+.column-container{
+  grid-column: 2 / span 10;
+  background: var(--lightBgColor);
+
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-top: 40px;
+  margin-bottom: var(--bottomSpacing);
+
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:20px;
+}
+
+.column{
+  background: var(--mainColor);
+  border: 1px solid var(--borderColor);
+  padding: 1rem;
+
+  box-shadow: 11px 11px 0px 3px rgba(6,54,6,1);
+  -webkit-box-shadow: 11px 11px 0px 3px rgba(6,54,6,1);
+  -moz-box-shadow: 11px 11px 0px 3px rgba(6,54,6,1);
+}
+
+
 .column-container-3{
   grid-column: 2 / span 10;
   background: var(--lightBgColor);
@@ -129,31 +159,12 @@ background: var(--mainColor);
 
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap:20px;
+
   grid-template-areas:
   'column-one column-two column-three'
   ;
 }
-
-.column-container{
-  background: var(--mainColor);
-  border: 1px solid var(--borderColor);
-
-  margin: 20px;
-
-}
-
-.column-one,.column-two,.column-three{
-  background: var(--mainColor);
-  border: 1px solid var(--borderColor);
-
-  margin: 20px;
-
-  box-shadow: 11px 11px 0px 3px rgba(6,54,6,1);
-  -webkit-box-shadow: 11px 11px 0px 3px rgba(6,54,6,1);
-  -moz-box-shadow: 11px 11px 0px 3px rgba(6,54,6,1);
-
-}
-
 
 blockquote {
   margin: 0;
